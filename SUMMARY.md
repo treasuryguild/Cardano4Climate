@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Page 1](README.md)
+* [Cardano4Climate](README.md)
