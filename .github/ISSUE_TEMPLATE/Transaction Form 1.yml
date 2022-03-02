@@ -49,19 +49,13 @@ body:
       label: Budget Item
       description: Please select the budget item.
       options:
-        - CC member remuneration
-        - CC - Comm/Org tools
-        - CC Admin staff remuneration
-        - CC Admin - Comm/Org tools
-        - CC Treasurer remuneration
-        - CC Treasury system
-        - CC Treasury system documentation
-        - Project funding - Community Advisors
-        - Project funding - Funded Proposers
-        - Project funding - General ADA Holder
-        - Project funding - Stake Pool Operators
-        - Project funding - Toolmakers & Maintainers
-        - Other
+        - Remuneration (3 UBI)
+        - Subscriptions & webhosting
+        - Event Incentives & C4C Veritree contribution
+        - Seed fund for C4C determined project
+        - Weekly meeting
+        - Monthly event
+        - Event Remuneration
     validations:
       required: true
   - type: textarea
