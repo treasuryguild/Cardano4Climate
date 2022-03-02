@@ -63,44 +63,26 @@ Description: ${description}`
     function githubQueryLink2(budgetB) {
       var answer = "";
       switch(budgetB) {
-        case 'CC member remuneration':
-          answer = "CC-member-remuneration/";
+        case 'Remuneration (3 UBI)':
+          answer = "Remuneration-3xUBI/";
           break;
-        case 'CC - Comm/Org tools':
-          answer = "CC-Comm-Org-tools/";
+        case 'Subscriptions & webhosting':
+          answer = "Subscriptions-&-webhosting/";
           break;
-        case 'CC Admin staff remuneration':
-          answer = "CC-Admin-staff-remuneration/";
+        case 'Event Incentives & C4C Veritree contribution':
+          answer = "Event-Incentives-&-C4C-Veritree-contribution/";
           break;
-        case 'CC Admin - Comm/Org tools':
-          answer = "CC-Admin-Comm-Org-tools/";
+        case 'Seed fund for C4C determined project':
+          answer = "Seed-fund-for-C4C-determined-project/";
           break;
-        case 'CC Treasurer remuneration':
-          answer = "CC-Treasurer-remuneration/";
+        case 'Weekly meeting':
+          answer = "Weekly-meeting/";
           break;
-        case 'CC Treasury system':
-          answer = "CC-Treasury-system/";
+        case 'Monthly event':
+          answer = "Monthly-event/";
           break;
-        case 'CC Treasury system documentation':
-          answer = "CC-Treasury-system-documentation/";
-          break;
-        case 'Project funding - Community Advisors':
-          answer = "Project-funding-Community-Advisors/";
-          break;
-        case 'Project funding - Funded Proposers':
-          answer = "Project-funding-Funded-Proposers/";
-          break;
-        case 'Project funding - General ADA Holder':
-          answer = "Project-funding-General-ADA-Holder/";
-          break;
-        case 'Project funding - Stake Pool Operators':
-          answer = "Project-funding-Stake-Pool-Operators/";
-          break;
-        case 'Project funding - Toolmakers & Maintainers':
-          answer = "Project-funding-Toolmakers-&-Maintainers/";
-          break;
-        case 'Other':
-          answer = "Other/";
+        case 'Event Remuneration':
+          answer = "Event-Remuneration/";
           break;
         default:
           answer = "";
@@ -109,6 +91,6 @@ Description: ${description}`
       return answer;
     }
     //Open in a new tab
-  window.open("https://github.com/cctreasury/Treasury-system/new/main/content/en/blog/" + githubQueryLink(pool) + githubQueryLink2(budgetB) + "new?value=" + encodedFileText +"&filename=" + filename);
+  window.open("https://github.com/treasuryguild/Cardano4Climate/new/main/content/en/blog/" + githubQueryLink(pool) + githubQueryLink2(budgetB) + "new?value=" + encodedFileText +"&filename=" + filename);
     
   }
