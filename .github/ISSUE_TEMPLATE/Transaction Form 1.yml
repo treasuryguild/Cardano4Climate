@@ -1,0 +1,85 @@
+name: Transaction Form 1
+description: Fill in this form when you make a transaction (Complete form 1 and 2)
+title: "CC Treasury Transaction Issue Form"
+labels: ["Transactions"]
+assignees:
+  - Glaxas
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill in the details of the transaction
+  - type: dropdown
+    id: pool
+    attributes:
+      label: Pool
+      description: Please select the funded proposal that will pay for this
+      options:
+        - Power Up Catalyst Circle
+        - CC Admin Team Scope Expansion
+        - CCv3 Sustaining the Circle
+        - CC Funding Mechanism
+        - CC Treasury Management
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Name
+      description: Please enter the name of beneficiary.
+      placeholder: ex. Kenric Nelson
+    validations:
+      required: true
+  - type: input
+    id: amount
+    attributes:
+      label: Amount of ADA
+      description: Please enter the amount of ADA.
+      placeholder: ex. 200 ADA or $ amount
+    validations:
+      required: true
+  - type: input
+    id: txhash
+    attributes:
+      label: Transaction ID
+      description: Please enter the transaction ID.
+      placeholder: ex. 427b473ca6c643578121745dc2f39f6e7e1681e25bf334d87305aaae73c2216f
+    validations:
+      required: true
+  - type: dropdown
+    id: budgetb
+    attributes:
+      label: Budget Item
+      description: Please select the budget item.
+      options:
+        - CC member remuneration
+        - CC - Comm/Org tools
+        - CC Admin staff remuneration
+        - CC Admin - Comm/Org tools
+        - CC Treasurer remuneration
+        - CC Treasury system
+        - CC Treasury system documentation
+        - Project funding - Community Advisors
+        - Project funding - Funded Proposers
+        - Project funding - General ADA Holder
+        - Project funding - Stake Pool Operators
+        - Project funding - Toolmakers & Maintainers
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: Comment
+    attributes:
+      label: Description/Extra Comments
+      description: Description/Extra comments about transaction.
+      placeholder: ex. This is a monthly fee, please pay this on the 3rd of each month?
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Agree the information is correct
+      description: By submitting this issue, you agree the information provided is correct.
+      options:
+        - label: I agree the information provided is correct.
+          required: true
