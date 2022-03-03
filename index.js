@@ -38,20 +38,11 @@ Description: ${description}`
     function githubQueryLink(pool) {
       var answer = "";
       switch(pool) {
-        case 'Power Up Catalyst Circle':
-          answer = "Fund6/Power-Up-The-Catalyst-Circle/";
+        case 'Cardano4Climate Community Events':
+          answer = "Fund7/Cardano4Climate-Community-Events/";
           break;
-        case 'CC Admin Team Scope Expansion':
-          answer = "Fund7/CC-Admin-Team-Scope-Expantion/";
-          break;
-        case 'CCv3 Sustaining The Circle':
-          answer = "Fund7/CCv3-Sustaining-the-circle/";
-          break;
-        case 'CC Funding Mechanism':
-          answer = "Fund7/CC-Funding-Mechanism/";
-          break;
-        case 'CC Treasury Management':
-          answer = "Fund7/CC-Treasury-Management/";
+        case 'Cardano4Climate Community Hub':
+          answer = "Fund7/Cardano4Climate-Community-Hub/";
           break;
         default:
           answer = "";
