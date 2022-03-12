@@ -3,7 +3,7 @@ description: Fill in this form when you make a transaction (Complete form 1 and 
 title: "Bridge Builders"
 labels: ["Transactions"]
 assignees:
-  - Andre-Diamond
+  - Andre-Miro
 body:
   - type: markdown
     attributes:
@@ -45,7 +45,7 @@ body:
   - type: dropdown
     id: budgetb
     attributes:
-      label: Budget Item
+      label: Budget Item Governance day
       description: Please select the budget item.
       options:
         - Organisation
