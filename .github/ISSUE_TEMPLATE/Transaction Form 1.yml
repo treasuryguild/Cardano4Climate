@@ -45,7 +45,7 @@ body:
   - type: dropdown
     id: budgetb
     attributes:
-      label: Budget Item Governance day
+      label: Budget Item Governance day or Café sûr le pont
       description: Please select the budget item.
       options:
         - Organisation
