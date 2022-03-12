@@ -1,6 +1,6 @@
 name: Transaction Form 1
 description: Fill in this form when you make a transaction (Complete form 1 and 2)
-title: "CC Treasury Transaction Issue Form"
+title: "Bridge Builders"
 labels: ["Transactions"]
 assignees:
   - Andre-Diamond
@@ -15,8 +15,7 @@ body:
       label: Pool
       description: Please select the funded proposal that will pay for this
       options:
-        - Cardano4Climate Community Events
-        - Cardano4Climate Community Hub
+        - Bridge Builders - Governance Events
     validations:
       required: true
   - type: input
@@ -49,13 +48,10 @@ body:
       label: Budget Item
       description: Please select the budget item.
       options:
-        - Remuneration (3 UBI)
-        - Subscriptions & webhosting
-        - Event Incentives & C4C Veritree contribution
-        - Seed fund for C4C determined project
-        - Weekly meeting
-        - Monthly event
-        - Event Remuneration
+        - Organisation
+        - Management and coordination
+        - Host rewards
+        - Post tasks
     validations:
       required: true
   - type: textarea
