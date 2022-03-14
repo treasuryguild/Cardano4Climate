@@ -3,7 +3,7 @@ description: Fill in this form when you make a transaction (Complete form 1 and 
 title: "Bridge Builders"
 labels: ["Transactions"]
 assignees:
-  - Andre-Miro
+  - miroslavrajh
 body:
   - type: markdown
     attributes:
