@@ -49,6 +49,7 @@ body:
       label: Budget Item
       description: Please select the budget item.
       options:
+        - Incoming IOG
         - Remuneration (3 UBI)
         - Subscriptions & webhosting
         - Event Incentives & C4C Veritree contribution
