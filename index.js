@@ -54,6 +54,9 @@ Description: ${description}`
     function githubQueryLink2(budgetB) {
       var answer = "";
       switch(budgetB) {
+        case 'Incoming IOG':
+          answer = "Incoming-IOG/";
+          break;
         case 'Remuneration (3 UBI)':
           answer = "Remuneration-3xUBI/";
           break;
