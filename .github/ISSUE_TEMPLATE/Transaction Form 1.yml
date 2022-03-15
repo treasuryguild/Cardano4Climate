@@ -1,6 +1,6 @@
 name: Transaction Form 1
 description: Fill in this form when you make a transaction (Complete form 1 and 2)
-title: "Bridge Builders"
+title: "Cardano4Climate Transaction Issue Form"
 labels: ["Transactions"]
 assignees:
   - miroslavrajh
@@ -15,7 +15,8 @@ body:
       label: Pool
       description: Please select the funded proposal that will pay for this
       options:
-        - Bridge Builders - Governance Events
+        - Cardano4Climate Community Events
+        - Cardano4Climate Community Hub
     validations:
       required: true
   - type: input
@@ -45,13 +46,16 @@ body:
   - type: dropdown
     id: budgetb
     attributes:
-      label: Budget Item Governance day or Café sûr le pont
+      label: Budget Item
       description: Please select the budget item.
       options:
-        - Organisation
-        - Management and coordination
-        - Host rewards
-        - Post tasks
+        - Remuneration (3 UBI)
+        - Subscriptions & webhosting
+        - Event Incentives & C4C Veritree contribution
+        - Seed fund for C4C determined project
+        - Weekly meeting
+        - Monthly event
+        - Event Remuneration
     validations:
       required: true
   - type: textarea
