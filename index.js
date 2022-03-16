@@ -34,7 +34,7 @@ function getValue(name){
     //Generate a string mimicing the file structure
     //Indentation is important here
     let fileText = `{
-  "label" : "${new Date().getTime().toString()}",
+  "id" : "${new Date().getTime().toString()}",
   "date": "${new Date().toUTCString()}",
   "project": "Cardano4Climate",
   "pool": "${pool}",
