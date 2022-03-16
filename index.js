@@ -8,7 +8,6 @@ function getValue(name){
     const name = getValue('name')
     const budgetB = getValue('budgetB')
     const ada = getValue('ada')
-    const txid = getValue('txid')
     const description = getValue('description')
     const pool = getValue('pool')
     
@@ -34,16 +33,15 @@ function getValue(name){
     //Generate a string mimicing the file structure
     //Indentation is important here
     let fileText = `{
-  "id" : ${new Date().getTime().toString()},
+  "id" : "${new Date().getTime().toString()}",
   "date": "${new Date().toUTCString()}",
   "project": "Cardano4Climate",
   "pool": "${pool}",
-  "Ideascale": "${ideascaleLink(pool)}",
+  "ideascale": "${ideascaleLink(pool)}",
   "budget": "${budgetB}",
-  "ada": ${ada},
+  "ada": "${ada}",
   "name": "${name}",
-  "wallet": "${txid}",
-  "transaction id": "",
+  "txid": "",
   "description": "${description}"
 }
 `
