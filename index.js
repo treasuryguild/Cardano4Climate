@@ -15,20 +15,36 @@ function getValue(name){
     //generate a filename
     const filename = new Date().getTime().toString() + '-' + name.replace(/\s/g, '-') + ".md"
     
+    function ideascaleLink(pool) {
+      var iLink = "";
+      switch(pool) {
+        case 'Cardano4Climate Community Events':
+          iLink = "https://cardano.ideascale.com/c/idea/384076";
+          break;
+        case 'Cardano4Climate Community Hub':
+          iLink = "https://cardano.ideascale.com/c/idea/384081";
+          break;
+        default:
+          iLink = "";
+          break;
+      }
+      return iLink;
+    }    
     
     //Generate a string mimicing the file structure
     //Indentation is important here
-    let fileText = `---
-Date: ${new Date().toUTCString()}
----
-
-##### ${name} ${ada} ADA
-
-| Date      | Name | Funded Proposal | Budget Item | ADA | Transaction|
-| :---        | :---  | :--- | :--- | :--- | :--- |
-| ${new Date().toUTCString()} | ${name} | ${pool} | ${budgetB} | ${ada} | [link](https://cardanoscan.io/transaction/${txid})|
-
-Description: ${description}`
+    let fileText = `{
+  "label" : "${new Date().getTime().toString()}",
+  "date": "${new Date().toUTCString()}",
+  "project": "Cardano4Climate",
+  "pool": "${pool}",
+  "Ideascale": "${ideascaleLink(pool)}"
+  "budget": "${budgetB}",
+  "ada": "${ada}",
+  "name": "${name}",
+  "description": "${description}"
+}
+`
     
     //Encode string to URI format
     const encodedFileText = encodeURIComponent(fileText)
