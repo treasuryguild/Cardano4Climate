@@ -15,3 +15,7 @@ Click **Run Pen** to View current balance of Funded Proposal "**Cardano4Climate*
 ## Cardano4Climate Community Hub
 
 Click **Run Pen** to View current balance of Funded Proposal "**Cardano4Climate** **Community Hub**"
+
+{% embed url="https://codepen.io/cc-treasury/pen/GRyEOER" %}
+[Click here to view transactions](transactions/fund-7/cardano4climate-community-hub.md)
+{% endembed %}
