@@ -73,6 +73,9 @@ function getValue(name){
         case 'Incoming IOG':
           answer = "Incoming-IOG/";
           break;
+        case 'Treasury Wallet':
+          answer = "Treasury-Wallet/";
+          break;
         case 'Remuneration (3 UBI)':
           answer = "Remuneration-3xUBI/";
           break;
