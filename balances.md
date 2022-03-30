@@ -9,7 +9,7 @@ description: Here you will find all balances of Funded Proposals
 Click **Run Pen** to View current balance of Funded Proposal "**Cardano4Climate** **Community Events**"
 
 {% embed url="https://codepen.io/cc-treasury/pen/qBpjVOM" %}
-[Click here to view transactions](transactions/fund-7/cardano4climate-community-events.md)
+[Click here to view transactions](transactions/fund-7/cardano4climate-community-events-c4c-wallet.md)
 {% endembed %}
 
 ## Cardano4Climate Community Hub
@@ -17,5 +17,5 @@ Click **Run Pen** to View current balance of Funded Proposal "**Cardano4Climate*
 Click **Run Pen** to View current balance of Funded Proposal "**Cardano4Climate** **Community Hub**"
 
 {% embed url="https://codepen.io/cc-treasury/pen/GRyEOER" %}
-[Click here to view transactions](transactions/fund-7/cardano4climate-community-hub.md)
+[Click here to view transactions](transactions/fund-7/cardano4climate-community-hub-c4c-wallet.md)
 {% endembed %}
