@@ -10,6 +10,7 @@ function getValue(name){
     const ada = getValue('ada')
     const description = getValue('description')
     const pool = getValue('pool')
+    const xrate = getValue('xrate')
     
     //generate a filename
     const filename = new Date().getTime().toString() + '-' + name.replace(/\s/g, '-') + ".json"
@@ -40,6 +41,7 @@ function getValue(name){
   "ideascale": "${ideascaleLink(pool)}",
   "budget": "${budgetB}",
   "ada": "${ada}",
+  "exchange-rate": "${xrate} USD per ADA",
   "name": "${name}",
   "txid": "",
   "description": "${description}"

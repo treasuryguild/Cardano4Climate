@@ -20,29 +20,6 @@
                 </select>
             </div>
             <div class = 'form'>
-                <select class = 'dropd' id = 'name'>
-                    <option value='IOG'>IOG</option>
-                    <option value='Treasury Guild'>Treasury Guild</option>
-                    <option value='Allison Fromm' selected>Allison Fromm</option>
-                    <option value='André Diamond'>André Diamond</option>
-                    <option value='Charlie Robertstad'>Charlie Robertstad</option>
-                    <option value='Christopher Keller'>Christopher Keller</option>
-                    <option value='Felix Weber'>Felix Weber</option>
-                    <option value='JP (Jonathan Postnikoff)'>JP (Jonathan Postnikoff)</option>
-                    <option value='Kenric Nelson'>Kenric Nelson</option>
-                    <option value='Mattias Sieber'>Mattias Sieber</option>
-                    <option value='Michael Yagi'>Michael Yagi</option>
-                    <option value='Miroslav Rajh'>Miroslav Rajh</option>
-                    <option value='Nadim Karam'>Nadim Karam</option>
-                    <option value='Nori Nishigaya'>Nori Nishigaya</option>
-                    <option value='Peter Wolcott'>Peter Wolcott</option>
-                    <option value='Raymond Mata'>Raymond Mata</option>
-                    <option value='Stephan Whitenstall'>Stephan Whitenstall</option>
-                    <option value='Tevo Saks'>Tevo Saks</option>
-                    <option value='Victor Corcino'>Victor Corcino</option>
-                </select>
-            </div>
-            <div class = 'form'>
                 <select class = 'dropd' id = 'budgetB'>
                     <option value='Incoming IOG'>Incoming IOG</option>
                     <option value='Treasury Wallet'>Treasury Wallet</option>
@@ -54,6 +31,32 @@
                     <option value='Monthly event'>Monthly event</option>
                     <option value='Event Remuneration'>Event Remuneration</option>
                 </select>
+            </div>
+            <div class = 'form'>
+                <label class = 'custom-field' for='name'> 
+                    <input
+                        type='text'
+                        id='name'
+                        name='name'
+                        autoComplete="off"
+                        required
+                    />
+                    <span class="placeholder">Name</span>
+                    <span class="disco">Beneficiary</span>
+                    </label>
+            </div>
+            <div class = 'form'>
+                <label class = 'custom-field' for='xrate'> 
+                    <input
+                        type='text'
+                        id='xrate'
+                        name='xrate'
+                        autoComplete="off"
+                        required
+                    />
+                    <span class="placeholder">ex. 0.92</span>
+                    <span class="disco">USD/ADA Exchange Rate</span>
+                    </label>
             </div>
             <div class='form'>
                 <label class = 'custom-field' for='ada'> 
