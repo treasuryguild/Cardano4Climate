@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
   - name: Transaction Form 1
-    url: https://treasuryguild.github.io/Cardano4Climate/
+    url: https://treasuryguild.github.io/treasury-v3/
     about: Fill in this form when you make a transaction (Complete form 1 and 2)
+  - name: Transaction Form 2
+    url: https://github.com/treasuryguild/Cardano4Climate/issues/new
+    about: Fill in this form after you made a transaction (Complete form 1 and 2)
   - name: Tasks/Misc/Expenses
     url: https://docs.google.com/forms/d/e/1FAIpQLSfRqm6wvX4gBN-V3bQIbFO4UnO8FofR4px8tsFcfL04sb-l9A/viewform?usp=sf_link
     about: Google form for tasks/misc/expense ADA requests to be completed by Co-/Proposer
