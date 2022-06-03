@@ -8,6 +8,8 @@ Fund 7 funded proposals (Ideascale links)
 - [Cardano4Climate Community Events](https://cardano.ideascale.com/c/idea/384076)
 - [Cardano4Climate Community Hub](https://cardano.ideascale.com/c/idea/384081)
 
+Fund 8 funded proposals (Idescale links)
 
-
+- [Community Lead Generation](https://cardano.ideascale.com/c/idea/397339)
+- [Cross-Chain Impact Lead Generator](https://cardano.ideascale.com/c/idea/402760)
 
