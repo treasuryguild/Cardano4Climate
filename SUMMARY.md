@@ -9,3 +9,5 @@
     * [Cardano4Climate Community Hub - C4C Wallet](transactions/fund-7/cardano4climate-community-hub-c4c-wallet.md)
     * [Cardano4Climate Community Hub - Treasury Guild Wallet](transactions/fund-7/cardano4climate-community-hub-treasury-guild-wallet.md)
   * [Fund 8](transactions/fund-8.md)
+  * [Cross-Chain Impact Lead Generator](transactions/cross-chain-impact-lead-generator.md)
+  * [Copy of Copy of Cardano4Climate Community Events - C4C Wallet](transactions/copy-of-copy-of-cardano4climate-community-events-c4c-wallet.md)
