@@ -8,3 +8,4 @@
     * [Cardano4Climate Community Events - Treasury Guild Wallet](transactions/fund-7/cardano4climate-community-events-treasury-guild-wallet.md)
     * [Cardano4Climate Community Hub - C4C Wallet](transactions/fund-7/cardano4climate-community-hub-c4c-wallet.md)
     * [Cardano4Climate Community Hub - Treasury Guild Wallet](transactions/fund-7/cardano4climate-community-hub-treasury-guild-wallet.md)
+* [Fund 8](fund-8.md)
