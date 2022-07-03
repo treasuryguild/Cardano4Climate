@@ -1,0 +1,25 @@
+name: Export issues
+on:
+  issues:
+    types: [closed]
+  workflow_dispatch:
+ # schedule:
+    # run every 8 hours
+  #  - cron:  '0 0,8,16 * * *'
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    name: discord
+    steps:
+     - name: Test Custom
+       uses: rjstone/discord-webhook-notify@v1
+       with:
+         severity: info
+         username: Treasury Guild
+         color: '#ff00aa'
+         avatarUrl: https://github.githubassets.com/images/modules/logos_page/Octocat.png
+         description: "Payment Notification"
+         details: ${{ github.event.issue.body }} https://treasury-guild.gitbook.io/cardano4climate/
+         footer: "View transaction in Gitbook link"
+         text: ${{ github.event.issue.title }}
+         webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
