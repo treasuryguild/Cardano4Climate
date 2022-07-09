@@ -32,16 +32,18 @@ jobs:
        if: ${{ env.fundR == 'Fund8' }}
        run: echo "fun=F8" >> "$GITHUB_ENV"
        
-     - name: InColour
+     - name: FundsIn
        if: ${{ contains(fromJSON(github.event.issue.body).budget, 'Incoming') }}
        run: |
          echo "fCol=#03fc2c" >> "$GITHUB_ENV"
          echo "fProcess=Amount Received" >> "$GITHUB_ENV"
-     - name: OutColour
+         echo "fTitle=Incoming" >> "$GITHUB_ENV"
+     - name: FundsOut
        if: ${{ !(contains(fromJSON(github.event.issue.body).budget, 'Incoming')) }}
        run: |
          echo "fCol=#ff00aa" >> "$GITHUB_ENV"
          echo "fProcess=Amount Paid" >> "$GITHUB_ENV"
+         echo "fTitle=Outgoing" >> "$GITHUB_ENV"
        
      - name: Set env data
        id: propdata
@@ -76,7 +78,7 @@ jobs:
            ${{ fromJSON(github.event.issue.body).wallet-balance[0] }} ${{ fromJSON(github.event.issue.body).wallet-balance[1] }} ${{ fromJSON(github.event.issue.body).wallet-balance[2] }}
            ```    
          footer: Exchange Rate - ${{ fromJSON(github.event.issue.body).exchange-rate }}
-         text: ${{ github.event.issue.title }}
+         text: ${{ env.fTitle }}
          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
      - name: Test Custom3
        if: ${{ fromJSON(github.event.issue.body).proposal != env.gWallet }}
@@ -102,6 +104,6 @@ jobs:
            ${{ fromJSON(github.event.issue.body).wallet-balance[0] }} ${{ fromJSON(github.event.issue.body).wallet-balance[1] }} ${{ fromJSON(github.event.issue.body).wallet-balance[2] }}
            ```    
          footer: Exchange Rate - ${{ fromJSON(github.event.issue.body).exchange-rate }}
-         text: ${{ github.event.issue.title }}
+         text: ${{ env.fTitle }}
          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
-     
+    
